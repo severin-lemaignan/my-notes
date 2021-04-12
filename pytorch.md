@@ -1,2 +1,3 @@
 # pytorch
 
+[[deep-learning]] [[python]]

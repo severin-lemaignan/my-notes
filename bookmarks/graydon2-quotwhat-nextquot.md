@@ -1,4 +1,4 @@
-# graydon2 | &quot;What next?&quot;
+# graydon2 | "What next?"
 
 Date: 2018-01-08 22:55:24
 [[compilation]] [[future]] [[language]] [[programming]]
