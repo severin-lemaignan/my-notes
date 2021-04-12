@@ -5,7 +5,10 @@ from datetime import datetime
 ROOT = Path(".")
 BOOKMARKS = ROOT / "bookmarks"
 
-regexp = re.compile(".*HREF=\"(.*)\".*TAGS=\"(.*)\" ADD_DATE=\"(.*)\">(.*)</A>")
+re_url = re.compile(".*HREF=\"(.*?)\"")
+re_tags = re.compile(".*TAGS=\"(.*?)\"")
+re_date = re.compile(".*ADD_DATE=\"(.*?)\"")
+re_title = re.compile(".*HREF.*>(.*)</A>")
 
 def make_name(name):
     name = name.lower().replace(" ", "-")
@@ -29,22 +32,28 @@ def make_tag(tag):
 
     return safetag
 
-with open("bookmark.html", "r") as f:
+with open("ff_bookmarks.html", "r") as f:
     lines = f.readlines()
 
     for l in lines:
-        if l.startswith("<DT>"):
-            m = regexp.match(l)
-            if not m:
+        if l.strip().startswith("<DT>"):
+            m_url = re_url.match(l)
+            m_tags = re_tags.match(l)
+            m_date = re_date.match(l)
+            m_title = re_title.match(l)
+            if not m_title:
                 print("No match? "  + l)
                 continue
 
-            url = m.group(1)
-            tags = [make_tag(t) for t in m.group(2).split(",")]
-            date = m.group(3)
-            title = m.group(4)
+            url = m_url.group(1)
+            if not m_tags:
+                continue
+            tags = [make_tag(t) for t in m_tags.group(1).split(",")]
+            date = m_date.group(1)
+            title = m_title.group(1)
 
             filename = make_name(title) + ".md"
+
             with open(BOOKMARKS/filename, "w") as f:
                 f.write("# %s\n\n" % title)
                 f.write("Date: %s\n" % (datetime.fromtimestamp(int(date))))
