@@ -1,4 +1,4 @@
-# Pen Plotter Art &amp; Algorithms, Part 1
+# Pen Plotter Art & Algorithms, Part 1
 
 Date: 2018-08-25 22:09:00
 [[2d]] [[3d-printer]] [[generative-drawings]] [[pen]] [[plotter]]

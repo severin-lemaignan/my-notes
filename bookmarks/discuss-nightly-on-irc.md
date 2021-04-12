@@ -3,4 +3,4 @@
 Date: 2018-08-25 22:08:44
 [[]]
 
-URL: [https://mibbit.com/?server=irc.mozilla.org&amp;channel=%23nightly]
+URL: [https://mibbit.com/?server=irc.mozilla.org&channel=%23nightly]

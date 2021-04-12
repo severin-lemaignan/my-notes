@@ -1,4 +1,4 @@
-# Galaxy S7 Root (G930A &amp; G935A) | Android Authority Forums
+# Galaxy S7 Root (G930A & G935A) | Android Authority Forums
 
 Date: 2018-08-25 22:09:06
 [[]]
