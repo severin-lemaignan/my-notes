@@ -1,0 +1,2 @@
+# windsor deception checklist
+
