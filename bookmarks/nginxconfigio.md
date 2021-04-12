@@ -1,6 +1,6 @@
 # nginxconfig.io
 
-Date: 2018-08-25 22:09:08
+Date: 2018-07-30 16:28:02
 [[nginx]]
 
-URL: [https://nginxconfig.io/?domain=guakamole.org&amp;https&amp;ssl_profile=modern]
+URL: [https://nginxconfig.io/?domain=guakamole.org&https&ssl_profile=modern]

@@ -1,6 +1,6 @@
 # BetterOS.org : an attempt to make computer machines run better
 
-Date: 2018-08-25 22:08:56
+Date: 2017-08-31 20:29:00
 [[graphics]] [[linux]] [[low-level]]
 
 URL: [http://betteros.org/tut/graphics1.php]

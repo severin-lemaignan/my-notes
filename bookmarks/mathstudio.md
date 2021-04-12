@@ -1,6 +1,6 @@
 # MathStudio
 
-Date: 2018-08-25 22:08:58
+Date: 2017-11-13 23:10:42
 [[math]]
 
 URL: [http://mathstud.io/]

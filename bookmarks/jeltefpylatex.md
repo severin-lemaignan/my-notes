@@ -1,6 +1,6 @@
 # JelteF/PyLaTeX
 
-Date: 2018-08-25 22:08:48
+Date: 2016-06-20 23:11:12
 [[latex]] [[python]]
 
 URL: [https://github.com/JelteF/PyLaTeX/tree/master]
